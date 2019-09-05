@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f5f2ec;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.logo img {
+    width: 40%;
+    padding-left: 2.5%;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+.nav-menu a {
+    font-size: 1.8em;
+    color: #922c2d;
+    text-decoration: none;
+}
+.nav-menu a:hover{
+    text-decoration: underline;
+}
+.content-wrapper {
+   width: 100%
+}
+.content-wrapper img {
+    height: auto;
+    width: 100%;
+}
+.text-wrapper {
+    width: 100%;
+    position: relative;
+    margin-top: -60%;
+}
+.text-wrapper h1 {
+    text-align: center;
+    color: #f5f2ecc9;
+    font-size: 5em;
+    padding: 0 0;
+    margin: 0 0;
+}
+.img-button {
+    height: 15%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-btn {
+    background-color: #922c2de8;
+    border: 1px #922c2d solid;
+    border-radius: 30px;
+    width: 200px;
+    margin-top: 110px;
+    padding: 13px;
+    font-family: 'Roboto Slab';
+    font-size: 2.5em;
+    color: #f5f2ecc9;
+}
+.img-btn:hover {
+    background-color: #922c2dfc;
+    color: #f5f2ec;
+}
+
