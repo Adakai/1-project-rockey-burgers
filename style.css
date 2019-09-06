@@ -3,11 +3,12 @@
 html, body {
     height: 100%;
     width: 100%;
-}
-body{
     margin: 0;
     padding: 0;
+}
+body{
     font-size: 14px;
+    font-family: 'Roboto', serif;
 }
 .nav-container {
     display: flex;
@@ -29,7 +30,6 @@ body{
 }
 .nav-menu a {
     font-size: 1.8em;
-    font-family: 'Roboto', serif;
     color: #922c2d;
     text-decoration: none;
 }
@@ -43,37 +43,40 @@ body{
     height: auto;
     width: 100%;
 }
-.text-wrapper {
-    width: 100%;
-    position: relative;
-    margin-top: -43%;
-}
-.text-wrapper h1 {
-    text-align: center;
-    color: #f5f2ecc9;
-    font-size: 5em;
-    font-family: 'Roboto', serif;
-    font-weight: 700;
-    padding: 0 0;
-    margin: 0 0;
-}
-.img-button {
-    height: 15%;
-    display:flex;
+.content-wrapper {
+    background-image: url("./Rockey-Burgers/burger-hero.jpg");
+    height: 100%;
+    background-size: cover;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+.text-wrapper{
+    display: flex;
+    flex-direction: column;
+    color: #f5f2ecc9;
+}
+.text-wrapper h1 {
+    font-size: 3.5em;
+    margin-bottom: 50px;
+}
+/*.img-button {*/
+/*    height: 15%;*/
+/*    display:flex;*/
+/*    justify-content: center;*/
+/*    align-content: center;*/
+/*    align-items: center;*/
+/*}*/
 
 .img-btn {
     background-color: #922c2de8;
     border: 1px #922c2d solid;
     border-radius: 30px;
     width: 200px;
-    margin-top: 110px;
     padding: 13px;
-    font-family: 'Roboto', serif;
     font-size: 2.5em;
     color: #f5f2ecc9;
+    align-self: center;
 }
 .img-btn:hover {
     background-color: #922c2dfc;
