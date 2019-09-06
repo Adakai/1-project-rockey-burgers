@@ -29,7 +29,7 @@ body{
     width: 80%;
 }
 .nav-menu a {
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: #922c2d;
     text-decoration: none;
 }
@@ -37,7 +37,7 @@ body{
     text-decoration: underline;
 }
 .content-wrapper {
-   width: 100%
+   width: 100%;
 }
 .content-wrapper img {
     height: auto;
@@ -57,17 +57,9 @@ body{
     color: #f5f2ecc9;
 }
 .text-wrapper h1 {
-    font-size: 3.5em;
+    font-size: 4.5em;
     margin-bottom: 50px;
 }
-/*.img-button {*/
-/*    height: 15%;*/
-/*    display:flex;*/
-/*    justify-content: center;*/
-/*    align-content: center;*/
-/*    align-items: center;*/
-/*}*/
-
 .img-btn {
     background-color: #922c2de8;
     border: 1px #922c2d solid;
