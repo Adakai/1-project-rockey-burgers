@@ -4,10 +4,6 @@
     height: auto;
     width: 100%;
 }
-/*.content-wrapper img {*/
-/*    height: auto;*/
-/*    width: 100%;*/
-/*}*/
 
 /*Setting image background*/
 
@@ -16,24 +12,19 @@
     height: 100%;
     background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
 }
 
 /*Font on top of the image back ground*/
 
-.text-wrapper, .text-wrapper > a {
-    display: flex;
-    flex-direction: column;
-    color: #f5f2ecc9;
-    text-decoration: none;
-}
-
-.text-wrapper h1 {
-    font-size: 4.5em;
-    margin-bottom: 50px;
-}
-
+.text-wrapper {
+     color: #f5f2ecc9;
+     font-size: 2.5em;
+     margin-top: 150px;
+    margin-bottom: 60px;
+ }
 /*Button design and display*/
 
 .img-btn {
