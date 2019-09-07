@@ -11,6 +11,7 @@ html, body {
 body{
     font-size: 14px;
     font-family: 'Roboto', serif;
+    background-color: #f5f2ec;
 }
 
 /*Nav bar logo, menu and links*/
@@ -78,4 +79,9 @@ body{
 }
 .nav-menu a:hover, .faq a:hover {
     color: #922c2d;
+}
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: #922c2d;
 }
