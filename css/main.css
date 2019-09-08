@@ -19,7 +19,7 @@ body{
 .nav-container {
     display: flex;
     justify-content: space-evenly;
-    background-color: #f5f2ec;
+    background-color: #f5f2ec8f;
     width: 100%;
     position: fixed;
     z-index: 1;
