@@ -1,0 +1,30 @@
+@import "_varibles.scss";
+
+/*Footer, Icons and Copyright*/
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: $dark-red;
+}
+.footer-name {
+  padding-left: 10%;
+  width: 40%;
+  font-size: 1.2em;
+  color: $black;
+}
+.footer-icons {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+  padding-right: 10%;
+}
+.facebook-icon {
+  margin-right: 50px;
+}
+.twitter-icon a, .facebook-icon a {
+  color: $black;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "1-project-rockey-burgers",
+  "version": "1.0.0",
+  "description": "## Project 1 for Web Dev class 314",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adakai/1-project-rockey-burgers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adakai/1-project-rockey-burgers/issues"
+  },
+  "homepage": "https://github.com/Adakai/1-project-rockey-burgers#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
