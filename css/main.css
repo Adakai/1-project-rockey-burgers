@@ -138,7 +138,7 @@
 .text-wrapper {
   color: #f5f2ecc9;
   font-size: 2.5em;
-  margin-top: 150px;
+  margin-top: 200px;
   margin-bottom: 60px; }
   .text-wrapper h1 {
     text-align: center; }
@@ -178,6 +178,26 @@ video {
   border-radius: 10px;
   margin-bottom: 100px;
   cursor: pointer; }
+
+@media screen and (max-width: 900px) {
+  .text-wrapper {
+    font-size: 1.7em;
+    margin: 125px 0 0 0; }
+  .img-btn {
+    width: 150px;
+    font-size: 1.5em; }
+  .video-text {
+    font-size: 2.5em; } }
+
+@media screen and (max-width: 600px) {
+  .text-wrapper {
+    font-size: 1em;
+    margin: 125px 0 0 0; }
+  .img-btn {
+    width: 100px;
+    font-size: 1em; }
+  .video-text {
+    font-size: 2em; } }
 
 /*Footer, Icons and Copyright*/
 .footer {
