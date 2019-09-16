@@ -1,0 +1,64 @@
+@import "_varibles.scss";
+
+/*Setting image background and height and width of it*/
+
+.content-wrapper {
+  background-image: url("../img/landing-page-img.jpg");
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Font on top of the image back ground*/
+
+.text-wrapper {
+  color: $light-white;
+  font-size: 2.5em;
+  margin-top: 150px;
+  margin-bottom: 60px;
+  h1 {
+    text-align: center;
+  }
+}
+/*Button design and display*/
+
+.img-btn {
+  background-color: $light-red-btn;
+  border: 1px $dark-red solid;
+  border-radius: 30px;
+  width: 200px;
+  padding: 13px;
+  font-size: 2.5em;
+  color: $light-white;
+  align-self: center;
+}
+.img-btn:hover {
+  background-color: $hover-red-btn;
+  color: $white;
+  cursor: pointer;
+}
+
+/*Video and Text above video*/
+
+.vid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+.video-text{
+  font-size: 4.5em;
+  color: $dark-red;
+  padding-bottom: 50px;
+}
+video {
+  width: 80%;
+  border: 2px solid $dark-red;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
