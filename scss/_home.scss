@@ -25,6 +25,7 @@
   margin-bottom: 60px;
   h1 {
     text-align: center;
+    text-shadow: 1px 3px 3px $text-shadow;
   }
 }
 /*Button design and display*/
@@ -59,9 +60,10 @@
   box-shadow: 2px -1px 4px 3px $shadow-color;
 }
 .video-text{
-  font-size: 3.5em;
+  font-size: 4em;
   color: $dark-red;
   padding-bottom: 50px;
+  text-shadow: 1px 2px 2px $text-shadow;
 }
 video {
   width: 80%;
