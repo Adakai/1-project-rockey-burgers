@@ -18,11 +18,13 @@
 .nav-container {
   display: flex;
   justify-content: space-evenly;
-  background-color: #f5f2ec8f;
+  background-color: #f5f2eccc;
   width: 100%;
   height: 90px;
   position: fixed;
   z-index: 1;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 2px 2px 4px 3px $shadow-color;
 }
 
 /*logo in top left*/
@@ -73,7 +75,7 @@
 /*active tab highlight*/
 
 .active {
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #d6d6d669;
 }
 .active > div {

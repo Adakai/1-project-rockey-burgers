@@ -10,6 +10,10 @@
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*Font on top of the image back ground*/
@@ -34,6 +38,7 @@
   font-size: 2.5em;
   color: $light-white;
   align-self: center;
+  box-shadow: 2px 2px 4px 2px $shadow-color;
 }
 .img-btn:hover {
   background-color: $hover-red-btn;
@@ -48,7 +53,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 50px 0;
+  padding-top: 50px;
+  background-color: $background-color;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 2px -1px 4px 3px $shadow-color;
 }
 .video-text{
   font-size: 3.5em;
@@ -60,6 +68,7 @@ video {
   border-radius: 10px;
   margin-bottom: 100px;
   cursor: pointer;
+  box-shadow: 2px 2px 4px 5px $shadow-color;
 }
 
 @media screen and(max-width: 900px) {
