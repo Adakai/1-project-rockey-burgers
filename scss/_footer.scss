@@ -24,9 +24,16 @@
   width: 40%;
   padding-right: 10%;
 }
-.facebook-icon {
+.fa-facebook-square {
   margin-right: 50px;
+  color: black;
 }
-.twitter-icon a, .facebook-icon a {
-  color: $black;
+.fa-facebook-square, .fa-twitter-square {
+  color: black;
+}
+.fa-facebook-square:hover {
+  color: #4267b2;
+}
+.fa-twitter-square:hover {
+ color: #37a1f2;
 }

@@ -5,11 +5,13 @@
 
 .content-wrapper-menu {
   @extend .content-wrapper;
-  background-image: url("../img/menu.jpg");
+  background-image: url("../img/left.jpg");
+  height: 50%;
 }
 .text-wrapper-menu {
   @extend .text-wrapper;
   font-size: 5em;
+  margin-top: 50px;
 }
 .menu-background {
   display: flex;
