@@ -251,7 +251,7 @@
     justify-content: space-evenly;
     border-radius: 5px;
     width: 95%;
-    margin: 50px 0;
+    margin: 100px 0;
     background-color: #ecd9c7; }
     .menu-background .menu-container .menu-item {
       display: flex;
@@ -312,24 +312,26 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 1400px;
+  box-shadow: 2px -1px 4px 3px #88887081;
+  height: 1000px;
   width: 100%;
   background-color: #ecd9c7; }
   .about-container .about-title {
-    margin: 20px;
     color: #922c2d;
     font-size: 2em;
     text-shadow: 1px 2px 2px #00000062; }
+    .about-container .about-title h2 {
+      margin: 60px 0; }
   .about-container .about-us {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-bottom: 100px;
     padding: 20px;
     background-color: #f2ede3;
-    height: 60%;
+    margin-bottom: 100px;
+    height: 80%;
     width: 80%;
     border-radius: 10px;
     box-shadow: 2px 2px 4px 3px #88888850;
@@ -352,10 +354,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
+  box-shadow: 2px -1px 4px 3px #88887081;
+  justify-content: space-evenly;
   flex-direction: column;
-  align-items: center;
-  height: 3500px;
+  height: 3750px;
   background-color: #ecd9c7; }
   .maps-container .map-section {
     display: flex;

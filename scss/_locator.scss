@@ -2,11 +2,12 @@
 
 .maps-container {
     @include display-flex-center();
-    justify-content: space-around;
+    @include box-shadow();
+    justify-content: space-evenly;
     flex-direction: column;
-    align-items: center;
-    height: 3500px;
+    height: 3750px;
     background-color: $background-color;
+    
 
     .map-section {
        @include display-flex-center();
