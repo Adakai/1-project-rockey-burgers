@@ -1,21 +1,19 @@
 @import "_varibles.scss";
-@import "_navbar.scss";
-@import "_home.scss";
-@import "_footer.scss";
 
-.content-wrapper-menu {
+.content-wrapper-left {
   @extend .content-wrapper;
   background-image: url("../img/left.jpg");
   height: 50%;
+
+  .text-wrapper-left {
+    @extend .text-wrapper;
+    font-size: 4.5em;
+    margin-top: 100px;
+  }
 }
-.text-wrapper-menu {
-  @extend .text-wrapper;
-  font-size: 5em;
-  margin-top: 50px;
-}
+
 .menu-background {
-  display: flex;
-  justify-content: center;
+  @include display-flex-center();
   background-color: $background-color;
   width: 100%;
   box-shadow: 2px -1px 4px 3px #88887081;
@@ -30,9 +28,8 @@
     background-color: $background-color;
 
     .menu-item {
-      display: flex;
+      @include display-flex-center();
       flex-direction: column;
-      align-items: center;
       background-color: $light-white;
       border-radius: 10px;
       width: 425px;
@@ -50,6 +47,7 @@
         background-color: white;
         box-shadow: 2px 2px 4px 3px $shadow-color;
       }
+
       h1{
         font-size: 1em;
         color: $dark-red;
@@ -57,13 +55,14 @@
         border-bottom: 2px solid $dark-red;
         text-shadow: .5px .5px .5px $text-shadow;
       }
+
       ul {
-        display: flex;
+        @include display-flex-center();
         flex-direction: column;
-        align-items: center;
         padding: 0;
         font-size: .7em;
         list-style: none;
+
         li {
           margin: 10px;
         }
@@ -72,17 +71,21 @@
   }
 }
 
+//responsiveness
+
 @media screen and(max-width: 900px) {
   .text-wrapper-menu {
     font-size: 3em;
     margin: 225px 0 0 0;
   }
 }
+
 @media screen and(max-width: 600px) {
   .text-wrapper-menu {
     font-size: 2em;
     margin: 200px 0 0 0;
   }
+
   .menu-background .menu-container .menu-item  {
     img {
       width: 300px;

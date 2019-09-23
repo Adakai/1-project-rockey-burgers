@@ -1,0 +1,30 @@
+@mixin anchor-tags() {
+    width: 25%;
+    height: 100%;
+    font-size: 1.5em;
+    color: $light-red-nav;
+    text-decoration: none;
+  }
+
+  @mixin display-flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @mixin column-space-evenly() {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  @mixin navbar-hambuger() {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 45%;
+    padding-right: 2.5%;
+    color: $light-red-nav;
+    cursor: pointer;
+  }
+

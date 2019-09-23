@@ -1,39 +1,30 @@
 @import "_varibles.scss";
-@import "_navbar.scss";
-@import "_menu.scss";
-@import "_footer.scss";
 
-.content-wrapper-about {
-    @extend .content-wrapper-menu;
+.content-wrapper-right {
+    @extend .content-wrapper-left;
     background-image: url("../img/right.jpg");
-  }
-  .text-wrapper-about {
-    @extend .text-wrapper-menu;
-    font-size: 5em;
-  }
+
+    .text-wrapper-right {
+        @extend .text-wrapper-left;
+    }
+}
 
 .about-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 1200px;
+    @include display-flex-center();
+    @include column-space-evenly();
+    height: 1400px;
     width: 100%;
     background-color: $background-color;
 
     .about-title {
-        display: flex;
-        justify-content: center;
         margin: 20px;
         color: $dark-red;
         font-size: 2em;
         text-shadow: 1px 2px 2px $text-shadow;
     }
     .about-us {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
+        @include display-flex-center();
+        @include column-space-evenly();
         margin-bottom: 100px;
         padding: 20px;
         background-color: #f2ede3;
@@ -42,14 +33,17 @@
         border-radius: 10px;
         box-shadow: 2px 2px 4px 3px $shadow-color;
         font-size: 1.5em;
+        overflow-x: auto;
 
         .section {
+            @include display-flex-center();
             text-align: center;
-            color: #000000a9;
+            color: $text-color;
             margin: 5px;
             width: 80%;
         }
-        .strong-text {
+
+        .strong-text {     
             text-align: center;
             color: #922c2dc5;
             font-size: 1.3em;

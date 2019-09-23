@@ -1,18 +1,5 @@
 @import "_varibles.scss";
 
-@mixin anchor-tags () {
-  width: 25%;
-  height: 100%;
-  font-size: 1.5em;
-  color: $light-red-nav;
-  text-decoration: none;
-}
-@mixin link-box-flex () {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /*Nav bar logo, menu and links*/
 
 .nav-container {
@@ -25,135 +12,139 @@
   z-index: 1;
   border-radius: 0 0 10px 10px;
   box-shadow: 2px 2px 4px 3px $shadow-color;
-}
 
-/*logo in top left*/
+  /*logo in top left*/
 
-.logo {
-  width: 25%;
-  padding-left: 2.5%;
-  flex-shrink: 0;
-  a {
-    width: 60%;
-    height: 100%;
-    display: flex;
-    align-items: center;
+  #logo {
+    width: 25%;
+    padding-left: 2.5%;
+    flex-shrink: 0;
+    
+    a {
+      width: 60%;
+      height: 100%;
+    }
+
+    img {
+      height: auto;
+      width: 200px;
+    }
   }
-  img {
-    height: auto;
-    width: 200px;
+  
+  /*middle nav bar and faq on right and anchor tags*/
+
+  .nav-menu {
+    @include display-flex-center();
+    justify-content: space-evenly;
+    flex-shrink: 1;
+    width: 50%;
+
+    a {
+      @include anchor-tags();
+    }
+  }
+
+  .faq {
+    @include display-flex-center();
+    justify-content: flex-end;
+    flex-shrink: 15;
+    width: 20%;
+    padding-right: 2.5%;
+
+    a {
+      @include anchor-tags();
+      width: 40%;
+    }
+  }
+
+  .link-box, .link-box-faq {
+    @include display-flex-center();
+  }
+
+  /*active tab highlight*/
+
+  .active {
+    border-radius: 10px;
+    background-color: $light-white;
+  }
+
+  .active > div {
+    color: $dark-red;
+  }
+
+  .nav-menu a:hover, .faq a:hover {
+    color: $dark-red;
   }
 }
-
-/*middle nav bar and faq on right and anchor tags*/
-
-.nav-menu {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-shrink: 1;
-  width: 50%;
-  a {
-    @include anchor-tags();
-  }
-}
-.faq {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-shrink: 15;
-  width: 20%;
-  padding-right: 2.5%;
-  a {
-    @include anchor-tags();
-    width: 40%;
-  }
-}
-.link-box, .link-box-faq {
-  @include link-box-flex();
-}
-/*active tab highlight*/
-
-.active {
-  border-radius: 10px;
-  background-color: $light-white;
-}
-.active > div {
-  color: $dark-red;
-}
-.nav-menu a:hover, .faq a:hover {
-  color: $dark-red;
-}
-
-// Responsiveness
 
 .menu-icon {
   visibility: hidden;
   width: 0;
 }
 
+// Responsiveness
+
 @media screen and(max-width: 900px) {
   .nav-menu {
     visibility: hidden;
     width: 0;
   }
+
   .faq {
     visibility: hidden;
     width: 0;
   }
-  .logo {
+
+  #logo {
     width: 55%;
     padding-left: 2.5%;
+
     a {
       width: 100%;
     }
+
     img{
       width: 200px;
     }
   }
+
   .menu-icon {
-    visibility: visible;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 45%;
-    padding-right: 2.5%;
-    color: $light-red-nav;
-    cursor: pointer;
+    @include navbar-hambuger();
   }
+
   .menu-icon:hover {
     color: $hover-red-btn;
   }
 }
+
 @media screen and(max-width: 600px) {
   .nav-menu {
     visibility: hidden;
     width: 0;
   }
+
   .faq {
     visibility: hidden;
     width: 0;
   }
-  .logo {
+
+  #logo {
     width: 45%;
     padding-left: 2.5%;
+
     a {
       width: 100%;
     }
+
     img{
       width: 200px;
     }
   }
+
   .menu-icon {
-    visibility: visible;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 45%;
-    padding-right: 2.5%;
-    color: $light-red-nav;
-    cursor: pointer;
+    @include navbar-hambuger();
   }
+
   .menu-icon:hover {
     color: $hover-red-btn;
   }

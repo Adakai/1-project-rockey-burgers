@@ -6,96 +6,114 @@
   background-image: url("../img/landing-page-img.jpg");
   height: 100%;
   background-size: cover;
-  display: flex;
+  @include display-flex-center();
   justify-content: flex-start;
   flex-direction: column;
-  align-items: center;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
 
-/*Font on top of the image back ground*/
+  /*Font on top of the image back ground*/
 
-.text-wrapper {
-  color: $light-white;
-  font-size: 3.5em;
-  margin-top: 200px;
-  margin-bottom: 60px;
-  h1 {
-    text-align: center;
-    text-shadow: 1px 3px 3px $text-shadow;
+  .text-wrapper {
+    color: $light-white;
+    font-size: 3.5em;
+    margin-top: 200px;
+    margin-bottom: 60px;
+    h1 {
+      text-align: center;
+      text-shadow: 1px 3px 3px $text-shadow;
+    }
   }
-}
-/*Button design and display*/
 
-.img-btn {
-  background-color: $light-red-btn;
-  border: 1px $dark-red solid;
-  border-radius: 30px;
-  width: 200px;
-  padding: 13px;
-  font-size: 2.5em;
-  color: $light-white;
-  align-self: center;
-  box-shadow: 2px 2px 4px 2px $shadow-color;
-}
-.img-btn:hover {
-  background-color: $hover-red-btn;
-  color: $white;
-  cursor: pointer;
+  /*Button design and display*/
+
+  .img-btn {
+    background-color: $light-red-btn;
+    border: 1px $dark-red solid;
+    border-radius: 30px;
+    width: 200px;
+    padding: 13px;
+    font-size: 2.5em;
+    color: $light-white;
+    align-self: center;
+    box-shadow: 2px 2px 4px 2px $shadow-color;
+  }
+  .img-btn:hover {
+    background-color: $hover-red-btn;
+    color: $white;
+    cursor: pointer;
+  }
 }
 
 /*Video and Text above video*/
 
 .vid-container {
-  display: flex;
+  @include display-flex-center();
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding-top: 50px;
   background-color: $background-color;
   border-radius: 10px 10px 0 0;
   box-shadow: 2px -1px 4px 3px $shadow-color;
-}
-.video-text{
-  font-size: 4em;
-  color: $dark-red;
-  padding-bottom: 50px;
-  text-shadow: 1px 2px 2px $text-shadow;
-}
-video {
-  width: 80%;
-  border-radius: 10px;
-  margin-bottom: 100px;
-  cursor: pointer;
-  box-shadow: 2px 2px 4px 5px $shadow-color;
+
+  .video-text{
+    font-size: 4em;
+    color: $dark-red;
+    padding-bottom: 50px;
+    text-shadow: 1px 2px 2px $text-shadow;
+  }
+  video {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px 5px $shadow-color;
+  }
+  
 }
 
+// responsiveness
+
 @media screen and(max-width: 900px) {
-  .text-wrapper {
-    font-size: 2.5em;
-    margin: 225px 0 80px 0;
+  .content-wrapper {
+
+    .text-wrapper {
+      font-size: 2.5em;
+      margin: 225px 0 80px 0;
+    }
+    
+    .img-btn {
+      width: 175px;
+      font-size: 2em;
+    }
   }
-  .img-btn {
-    width: 175px;
-    font-size: 2em;
-  }
-  .video-text {
-    font-size: 2.5em;
+
+  .vid-container {
+
+    .video-text {
+      font-size: 2.5em;
+    }  
   }
 }
+
 @media screen and(max-width: 600px) {
-  .text-wrapper {
-    font-size: 2em;
-    margin: 200px 0 60px 0;
+  .content-wrapper {
+
+    .text-wrapper {
+      font-size: 2em;
+      margin: 80px 0 60px 0;
+    }
+
+    .img-btn {
+      width: 150px;
+      font-size: 1.5em;
+    }
   }
-  .img-btn {
-    width: 150px;
-    font-size: 1.5em;
-  }
-  .video-text {
-    font-size: 2em;
+  .vid-container {
+
+    .video-text {
+      font-size: 2em;
+    }  
   }
 }
