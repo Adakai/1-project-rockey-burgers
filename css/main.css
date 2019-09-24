@@ -36,7 +36,8 @@
       height: 100%;
       font-size: 1.5em;
       color: #922c2da8;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: transform .4s; }
   .nav-container .faq {
     display: flex;
     justify-content: center;
@@ -51,6 +52,7 @@
       font-size: 1.5em;
       color: #922c2da8;
       text-decoration: none;
+      transition: transform .4s;
       width: 50%; }
   .nav-container .link-box, .nav-container .link-box-faq {
     display: flex;
@@ -62,7 +64,12 @@
   .nav-container .active > div {
     color: #922c2d; }
   .nav-container .nav-menu a:hover, .nav-container .faq a:hover {
-    color: #922c2d; }
+    color: #922c2d;
+    -ms-transform: scale(1.04);
+    /* IE 9 */
+    -webkit-transform: scale(1.04);
+    /* Safari 3-8 */
+    transform: scale(1.04); }
 
 .menu-icon {
   visibility: hidden;
@@ -147,6 +154,7 @@
   .content-wrapper .img-btn, .content-wrapper-left .img-btn, .content-wrapper-right .img-btn {
     background-color: #922c2de8;
     border: 1px #922c2d solid;
+    transition: transform .2s;
     border-radius: 30px;
     width: 200px;
     padding: 13px;
@@ -157,7 +165,13 @@
   .content-wrapper .img-btn:hover, .content-wrapper-left .img-btn:hover, .content-wrapper-right .img-btn:hover {
     background-color: #922c2dfc;
     color: #f5f2ec;
-    cursor: pointer; }
+    cursor: pointer;
+    box-shadow: 3px 3px 4px 3px #88888850;
+    -ms-transform: scale(1.04);
+    /* IE 9 */
+    -webkit-transform: scale(1.04);
+    /* Safari 3-8 */
+    transform: scale(1.04); }
 
 /*Video and Text above video*/
 .vid-container {

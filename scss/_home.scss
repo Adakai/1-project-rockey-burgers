@@ -32,6 +32,7 @@
   .img-btn {
     background-color: $light-red-btn;
     border: 1px $dark-red solid;
+    transition: transform .2s;
     border-radius: 30px;
     width: 200px;
     padding: 13px;
@@ -44,6 +45,8 @@
     background-color: $hover-red-btn;
     color: $white;
     cursor: pointer;
+    box-shadow: 3px 3px 4px 3px $shadow-color;
+    @include transform-zoom(); 
   }
 }
 
