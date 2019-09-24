@@ -58,7 +58,7 @@
     align-items: center; }
   .nav-container .active {
     border-radius: 10px;
-    background-color: #922c2d36; }
+    background-color: #4e4e4e36; }
   .nav-container .active > div {
     color: #922c2d; }
   .nav-container .nav-menu a:hover, .nav-container .faq a:hover {
