@@ -19,7 +19,7 @@
     width: 25%;
     padding-left: 2.5%;
     flex-shrink: 0;
-    
+
     a {
       width: 60%;
       height: 100%;
@@ -28,6 +28,7 @@
     img {
       height: auto;
       width: 200px;
+      cursor: pointer;
     }
   }
   
@@ -53,7 +54,7 @@
 
     a {
       @include anchor-tags();
-      width: 40%;
+      width: 50%;
     }
   }
 
@@ -65,7 +66,7 @@
 
   .active {
     border-radius: 10px;
-    background-color: $light-white;
+    background-color: #922c2d36;
   }
 
   .active > div {

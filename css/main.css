@@ -22,7 +22,8 @@
       height: 100%; }
     .nav-container #logo img {
       height: auto;
-      width: 200px; }
+      width: 200px;
+      cursor: pointer; }
   .nav-container .nav-menu {
     display: flex;
     justify-content: center;
@@ -50,14 +51,14 @@
       font-size: 1.5em;
       color: #922c2da8;
       text-decoration: none;
-      width: 40%; }
+      width: 50%; }
   .nav-container .link-box, .nav-container .link-box-faq {
     display: flex;
     justify-content: center;
     align-items: center; }
   .nav-container .active {
     border-radius: 10px;
-    background-color: #f5f2ecc9; }
+    background-color: #922c2d36; }
   .nav-container .active > div {
     color: #922c2d; }
   .nav-container .nav-menu a:hover, .nav-container .faq a:hover {
