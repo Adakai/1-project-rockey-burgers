@@ -14,9 +14,8 @@
   /*middle nav bar and faq on right and anchor tags*/
   /*active tab highlight*/ }
   .nav-container #logo {
-    width: 25%;
-    padding-left: 2.5%;
-    flex-shrink: 0; }
+    width: 22%;
+    padding-left: 2.5%; }
     .nav-container #logo a {
       width: 60%;
       height: 100%; }
@@ -29,30 +28,27 @@
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
-    flex-shrink: 1;
     width: 50%; }
     .nav-container .nav-menu a {
       width: 25%;
       height: 100%;
       font-size: 1.5em;
       color: #922c2da8;
-      text-decoration: none;
-      transition: transform .4s; }
+      text-decoration: none; }
   .nav-container .faq {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: flex-end;
-    flex-shrink: 15;
     width: 20%;
-    padding-right: 2.5%; }
+    padding-right: 2.5%;
+    margin-left: 3%; }
     .nav-container .faq a {
       width: 25%;
       height: 100%;
       font-size: 1.5em;
       color: #922c2da8;
       text-decoration: none;
-      transition: transform .4s;
       width: 50%; }
   .nav-container .link-box, .nav-container .link-box-faq {
     display: flex;
@@ -63,7 +59,7 @@
     background-color: #4e4e4e36; }
   .nav-container .active > div {
     color: #922c2d; }
-  .nav-container .nav-menu a:hover, .nav-container .faq a:hover {
+  .nav-container .nav-menu a:hover, .nav-container .faq a:hover, .nav-container img:hover {
     color: #922c2d;
     -ms-transform: scale(1.04);
     /* IE 9 */
@@ -75,7 +71,7 @@
   visibility: hidden;
   width: 0; }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
   .nav-menu {
     visibility: hidden;
     width: 0; }
@@ -126,6 +122,37 @@
     cursor: pointer; }
   .menu-icon:hover {
     color: #922c2dfc; } }
+
+/*Footer, Icons and Copyright*/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90px;
+  width: 100%;
+  background-color: #922c2d;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 2px -1px 4px 3px #88888850; }
+  .footer .footer-name {
+    padding-left: 10%;
+    width: 40%;
+    font-size: 1.2em;
+    color: #050505; }
+  .footer .footer-icons {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    padding-right: 10%; }
+    .footer .footer-icons .fa-facebook-square {
+      margin-right: 50px;
+      color: black; }
+    .footer .footer-icons .fa-facebook-square, .footer .footer-icons .fa-twitter-square {
+      color: black; }
+    .footer .footer-icons .fa-facebook-square:hover {
+      color: #4267b2; }
+    .footer .footer-icons .fa-twitter-square:hover {
+      color: #37a1f2; }
 
 /*Setting image background and height and width of it*/
 .content-wrapper, .content-wrapper-left, .content-wrapper-right {
@@ -215,37 +242,6 @@
   .vid-container .video-text {
     font-size: 2em; } }
 
-/*Footer, Icons and Copyright*/
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 90px;
-  width: 100%;
-  background-color: #922c2d;
-  border-radius: 10px 10px 0 0;
-  box-shadow: 2px -1px 4px 3px #88888850; }
-  .footer .footer-name {
-    padding-left: 10%;
-    width: 40%;
-    font-size: 1.2em;
-    color: #050505; }
-  .footer .footer-icons {
-    display: flex;
-    justify-content: flex-end;
-    width: 40%;
-    padding-right: 10%; }
-    .footer .footer-icons .fa-facebook-square {
-      margin-right: 50px;
-      color: black; }
-    .footer .footer-icons .fa-facebook-square, .footer .footer-icons .fa-twitter-square {
-      color: black; }
-    .footer .footer-icons .fa-facebook-square:hover {
-      color: #4267b2; }
-    .footer .footer-icons .fa-twitter-square:hover {
-      color: #37a1f2; }
-
 .content-wrapper-left, .content-wrapper-right {
   background-image: url("../img/left.jpg");
   height: 50%; }
@@ -334,7 +330,7 @@
   .about-container .about-title {
     color: #922c2d;
     font-size: 2em;
-    text-shadow: 1px 2px 2px #00000062; }
+    text-shadow: 1px 1px 1px #00000062; }
     .about-container .about-title h2 {
       margin: 60px 0; }
   .about-container .about-us {
@@ -384,7 +380,7 @@
     box-shadow: 2px 2px 4px 5px #88888850;
     border-radius: 10px; }
     .maps-container .map-section h2 {
-      text-shadow: 1px 2px 2px #00000062;
+      text-shadow: 1px 1px 1px #00000062;
       font-size: 3em;
       color: #922c2d;
       border-bottom: 2px solid #922c2d;
@@ -395,6 +391,77 @@
     .maps-container .map-section iframe {
       margin-top: 25px;
       border-radius: 10px; }
+
+.careers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1100px;
+  width: 100%;
+  background-color: #ecd9c7; }
+  .careers-container .title {
+    margin: 20px 0;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #00000062;
+    color: #922c2d; }
+  .careers-container .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    background-color: #f5f2ecc9;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 3px #88888850;
+    height: 700px;
+    width: 80%;
+    padding: 70px; }
+    .careers-container .form-container .form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+      width: 80%;
+      margin: 10px 0; }
+      .careers-container .form-container .form label {
+        font-size: 1.5em;
+        margin: 10px;
+        color: #922c2d;
+        text-shadow: 0.5px 0.5px 0.5px #00000062; }
+      .careers-container .form-container .form .form-input {
+        border: 1px solid #922c2d66;
+        border-radius: 10px;
+        font-size: 1.2em;
+        width: 60%;
+        padding: 10px;
+        box-shadow: 2px 2px 4px 2px #88888850; }
+      .careers-container .form-container .form .selection {
+        width: 62.5%;
+        height: 35px;
+        border: 1px solid #922c2d66;
+        font-size: 1.2em;
+        box-shadow: 2px 2px 4px 2px #88888850; }
+    .careers-container .form-container .form-btn {
+      background-color: #922c2de8;
+      border: 1px #922c2d solid;
+      transition: transform .2s;
+      border-radius: 30px;
+      margin-top: 30px;
+      width: 200px;
+      padding: 13px;
+      font-size: 2.5em;
+      color: #f5f2ecc9;
+      align-self: center;
+      box-shadow: 2px 2px 4px 2px #88888850; }
+    .careers-container .form-container .form-btn:hover {
+      background-color: #922c2dfc;
+      color: #f5f2ec;
+      cursor: pointer;
+      box-shadow: 3px 3px 4px 3px #88888850;
+      -ms-transform: scale(1.04);
+      /* IE 9 */
+      -webkit-transform: scale(1.04);
+      /* Safari 3-8 */
+      transform: scale(1.04); }
 
 /*setting body to defaults*/
 html, body {

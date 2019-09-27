@@ -16,9 +16,8 @@
   /*logo in top left*/
 
   #logo {
-    width: 25%;
+    width: 22%;
     padding-left: 2.5%;
-    flex-shrink: 0;
 
     a {
       width: 60%;
@@ -37,25 +36,22 @@
   .nav-menu {
     @include display-flex-center();
     justify-content: space-evenly;
-    flex-shrink: 1;
     width: 50%;
 
     a {
       @include anchor-tags();
-      transition: transform .4s;
     }
   }
 
   .faq {
     @include display-flex-center();
     justify-content: flex-end;
-    flex-shrink: 15;
     width: 20%;
     padding-right: 2.5%;
+    margin-left: 3%;
 
     a {
       @include anchor-tags();
-      transition: transform .4s;
       width: 50%;
     }
   }
@@ -75,7 +71,7 @@
     color: $dark-red;
   }
 
-  .nav-menu a:hover, .faq a:hover {
+  .nav-menu a:hover, .faq a:hover, img:hover {
     color: $dark-red;
     @include transform-zoom();
   }
@@ -88,7 +84,7 @@
 
 // Responsiveness
 
-@media screen and(max-width: 900px) {
+@media screen and(max-width: 1100px) {
   .nav-menu {
     visibility: hidden;
     width: 0;

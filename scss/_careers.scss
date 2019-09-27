@@ -1,0 +1,82 @@
+@import "_varibles.scss";
+
+.careers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1100px;
+    width: 100%;
+    background-color: $background-color;
+
+    .title {
+        margin: 20px 0;
+        font-size: 2em;
+        @include text-shadow(); 
+        color: $dark-red;
+    }
+
+    .form-container {
+        @include display-flex-col();
+        align-items: center;
+        background-color: $light-white;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px 3px $shadow-color;
+        height: 700px;
+        width: 80%;
+        padding: 70px;
+
+        .form {
+            @include display-flex-center();
+            justify-content: space-between;
+            width: 80%;
+            margin: 10px 0;
+
+            label {
+                font-size: 1.5em;
+                margin: 10px;
+                color: $dark-red;
+                text-shadow: .5px .5px .5px $text-shadow;
+            }
+
+            .form-input {
+                border: 1px solid $super-light-red;
+                border-radius: 10px;
+                font-size: 1.2em; 
+                width: 60%;
+                padding: 10px;
+                box-shadow: 2px 2px 4px 2px $shadow-color;
+                
+            }
+           
+            .selection {
+                width: 62.5%;
+                height: 35px;
+                border: 1px solid $super-light-red;
+                font-size: 1.2em;
+                box-shadow: 2px 2px 4px 2px $shadow-color;
+            }
+        }
+
+        .form-btn {
+            background-color: $light-red-btn;
+            border: 1px $dark-red solid;
+            transition: transform .2s;
+            border-radius: 30px;
+            margin-top: 30px;
+            width: 200px;
+            padding: 13px;
+            font-size: 2.5em;
+            color: $light-white;
+            align-self: center;
+            box-shadow: 2px 2px 4px 2px $shadow-color;
+        }
+
+        .form-btn:hover {
+            background-color: $hover-red-btn;
+            color: $white;
+            cursor: pointer;
+            box-shadow: 3px 3px 4px 3px $shadow-color;
+            @include transform-zoom(); 
+          }
+    }
+}

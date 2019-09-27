@@ -20,7 +20,8 @@
     .about-title {
         color: $dark-red;
         font-size: 2em;
-        text-shadow: 1px 2px 2px $text-shadow;
+        @include text-shadow(); 
+        
         h2 {
             margin: 60px 0;
         }

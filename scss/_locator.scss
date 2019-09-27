@@ -18,22 +18,21 @@
        border-radius: 10px;
 
        h2 {
-            text-shadow: 1px 2px 2px $text-shadow;
-            font-size: 3em;
-            color: $dark-red;
-            border-bottom: 2px solid $dark-red;
-            width: 80%;
+          @include text-shadow(); 
+          font-size: 3em;
+          color: $dark-red;
+          border-bottom: 2px solid $dark-red;
+          width: 80%;
        }
 
        h3 {
-           
-            color: $text-color;
-            margin: 10px;
+          color: $text-color;
+          margin: 10px;
        }
 
        iframe {
-            margin-top: 25px;
-            border-radius: 10px;
+          margin-top: 25px;
+          border-radius: 10px;
        }
     }
 }
