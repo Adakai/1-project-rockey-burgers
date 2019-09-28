@@ -396,15 +396,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 1100px;
+  height: 1700px;
   width: 100%;
   background-color: #ecd9c7; }
-  .careers-container .title {
+  .careers-container .careers-title {
     margin: 20px 0;
     font-size: 2em;
     text-shadow: 1px 1px 1px #00000062;
     color: #922c2d; }
-  .careers-container .form-container {
+  .careers-container .careers-form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -412,35 +412,44 @@
     background-color: #f5f2ecc9;
     border-radius: 10px;
     box-shadow: 2px 2px 4px 3px #88888850;
-    height: 700px;
+    height: 1300px;
     width: 80%;
     padding: 70px; }
-    .careers-container .form-container .form {
+    .careers-container .careers-form-container .careers-form {
       display: flex;
       justify-content: center;
       align-items: center;
       justify-content: space-between;
       width: 80%;
       margin: 10px 0; }
-      .careers-container .form-container .form label {
+      .careers-container .careers-form-container .careers-form label {
         font-size: 1.5em;
         margin: 10px;
         color: #922c2d;
         text-shadow: 0.5px 0.5px 0.5px #00000062; }
-      .careers-container .form-container .form .form-input {
+      .careers-container .careers-form-container .careers-form .careers-form-input {
+        outline: green;
         border: 1px solid #922c2d66;
         border-radius: 10px;
         font-size: 1.2em;
         width: 60%;
         padding: 10px;
         box-shadow: 2px 2px 4px 2px #88888850; }
-      .careers-container .form-container .form .selection {
+      .careers-container .careers-form-container .careers-form .careers-selection {
         width: 62.5%;
         height: 35px;
         border: 1px solid #922c2d66;
         font-size: 1.2em;
+        color: gray;
         box-shadow: 2px 2px 4px 2px #88888850; }
-    .careers-container .form-container .form-btn {
+      .careers-container .careers-form-container .careers-form #careers_checkboxs {
+        color: #922c2d;
+        font-size: 1em; }
+        .careers-container .careers-form-container .careers-form #careers_checkboxs label {
+          margin-right: 20px; }
+        .careers-container .careers-form-container .careers-form #careers_checkboxs input {
+          margin-right: 45px; }
+    .careers-container .careers-form-container .careers-form-btn {
       background-color: #922c2de8;
       border: 1px #922c2d solid;
       transition: transform .2s;
@@ -452,7 +461,7 @@
       color: #f5f2ecc9;
       align-self: center;
       box-shadow: 2px 2px 4px 2px #88888850; }
-    .careers-container .form-container .form-btn:hover {
+    .careers-container .careers-form-container .careers-form-btn:hover {
       background-color: #922c2dfc;
       color: #f5f2ec;
       cursor: pointer;
@@ -462,6 +471,128 @@
       -webkit-transform: scale(1.04);
       /* Safari 3-8 */
       transform: scale(1.04); }
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1500px;
+  width: 100%;
+  background-color: #ecd9c7; }
+  .faq-container .faq-header h2 {
+    font-size: 4em;
+    color: #922c2d; }
+  .faq-container .faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 10px 0;
+    border-radius: 10px;
+    height: 750px;
+    width: 83.5%;
+    background-color: #f5f2ecc9;
+    box-shadow: 2px 2px 4px 3px #88888850; }
+    .faq-container .faq-container h3 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #922c2d; }
+    .faq-container .faq-container #hide_show_one {
+      display: none;
+      width: 80%; }
+      .faq-container .faq-container #hide_show_one p {
+        font-size: 1.5em;
+        color: #000000a9; }
+    .faq-container .faq-container #hide_show_two {
+      display: none;
+      width: 80%; }
+      .faq-container .faq-container #hide_show_two p {
+        font-size: 1.5em;
+        color: #000000a9; }
+    .faq-container .faq-container .hide-show-btn {
+      background-color: #922c2de8;
+      border: 1px #922c2d solid;
+      transition: transform .2s;
+      border-radius: 30px;
+      width: 150px;
+      padding: 5px;
+      font-size: 1.5em;
+      color: #f5f2ecc9;
+      align-self: center;
+      box-shadow: 2px 2px 4px 2px #88888850; }
+    .faq-container .faq-container .hide-show-btn:hover {
+      background-color: #922c2dfc;
+      color: #f5f2ec;
+      cursor: pointer;
+      box-shadow: 3px 3px 4px 3px #88888850;
+      -ms-transform: scale(1.04);
+      /* IE 9 */
+      -webkit-transform: scale(1.04);
+      /* Safari 3-8 */
+      transform: scale(1.04); }
+
+.sub-title {
+  margin: 20px 0;
+  font-size: 2em;
+  text-shadow: 1px 1px 1px #00000062;
+  color: #922c2d; }
+
+.sub-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  background-color: #f5f2ecc9;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 3px #88888850;
+  margin-bottom: 100px;
+  height: 450px;
+  width: 80%;
+  padding: 25px; }
+  .sub-form-container h2 {
+    font-size: 1.8em;
+    color: #922c2d;
+    margin-bottom: 25px; }
+  .sub-form-container .sub-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px 0; }
+    .sub-form-container .sub-form label {
+      font-size: 1.5em;
+      margin: 10px;
+      color: #922c2d;
+      text-shadow: 0.5px 0.5px 0.5px #00000062; }
+    .sub-form-container .sub-form .sub-form-input {
+      border: 1px solid #922c2d66;
+      border-radius: 10px;
+      font-size: 1.2em;
+      width: 60%;
+      padding: 10px;
+      box-shadow: 2px 2px 4px 2px #88888850; }
+  .sub-form-container .sub-form-btn {
+    background-color: #922c2de8;
+    border: 1px #922c2d solid;
+    transition: transform .2s;
+    border-radius: 30px;
+    margin-top: 40px;
+    width: 200px;
+    padding: 13px;
+    font-size: 2.5em;
+    color: #f5f2ecc9;
+    align-self: center;
+    box-shadow: 2px 2px 4px 2px #88888850; }
+  .sub-form-container .sub-form-btn:hover {
+    background-color: #922c2dfc;
+    color: #f5f2ec;
+    cursor: pointer;
+    box-shadow: 3px 3px 4px 3px #88888850;
+    -ms-transform: scale(1.04);
+    /* IE 9 */
+    -webkit-transform: scale(1.04);
+    /* Safari 3-8 */
+    transform: scale(1.04); }
 
 /*setting body to defaults*/
 html, body {

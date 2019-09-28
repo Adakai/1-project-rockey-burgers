@@ -1,0 +1,73 @@
+@import "_varibles.scss";
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1500px;
+    width: 100%;
+    background-color: $background-color;
+
+    .faq-header{
+        h2 {
+            font-size: 4em;
+            color: $dark-red;
+        }
+    }
+
+    .faq-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0 10px 0;
+        border-radius: 10px;
+        height: 750px;
+        width: 83.5%;
+        background-color: $light-white;
+        box-shadow: 2px 2px 4px 3px $shadow-color;
+
+    
+        h3 {
+            text-align: center;
+            font-size: 2.5em;
+            color: $dark-red;
+        }
+
+        #hide_show_one {
+            display: none;
+            width: 80%;
+            p {
+                font-size: 1.5em;
+                color: $text-color;
+            }
+        }
+        #hide_show_two {
+            display: none;
+            width: 80%;
+            p {
+                font-size: 1.5em;
+                color: $text-color;
+            }
+        }
+        
+        .hide-show-btn {
+            background-color: $light-red-btn;
+            border: 1px $dark-red solid;
+            transition: transform .2s;
+            border-radius: 30px;
+            width: 150px;
+            padding: 5px;
+            font-size: 1.5em;
+            color: $light-white;
+            align-self: center;
+            box-shadow: 2px 2px 4px 2px $shadow-color;
+          }
+          .hide-show-btn:hover {
+            background-color: $hover-red-btn;
+            color: $white;
+            cursor: pointer;
+            box-shadow: 3px 3px 4px 3px $shadow-color;
+            @include transform-zoom(); 
+          }
+    }
+}
