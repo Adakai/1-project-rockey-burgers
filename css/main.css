@@ -545,7 +545,7 @@
   border-radius: 10px;
   box-shadow: 2px 2px 4px 3px #88888850;
   margin-bottom: 100px;
-  height: 450px;
+  height: 550px;
   width: 80%;
   padding: 25px; }
   .sub-form-container h2 {
@@ -558,10 +558,9 @@
     align-items: center;
     justify-content: space-between;
     width: 80%;
-    margin: 20px 0; }
+    margin: 10px 0; }
     .sub-form-container .sub-form label {
       font-size: 1.5em;
-      margin: 10px;
       color: #922c2d;
       text-shadow: 0.5px 0.5px 0.5px #00000062; }
     .sub-form-container .sub-form .sub-form-input {
@@ -576,7 +575,7 @@
     border: 1px #922c2d solid;
     transition: transform .2s;
     border-radius: 30px;
-    margin-top: 40px;
+    margin-top: 50px;
     width: 200px;
     padding: 13px;
     font-size: 2.5em;

@@ -14,7 +14,7 @@
     border-radius: 10px;
     box-shadow: 2px 2px 4px 3px $shadow-color;
     margin-bottom: 100px;
-    height: 450px;
+    height: 550px;
     width: 80%;
     padding: 25px;
 
@@ -28,11 +28,10 @@
         @include display-flex-center();
         justify-content: space-between;
         width: 80%;
-        margin: 20px 0;
+        margin: 10px 0;
 
         label {
             font-size: 1.5em;
-            margin: 10px;
             color: $dark-red;
             text-shadow: .5px .5px .5px $text-shadow;
         }
@@ -53,7 +52,7 @@
         border: 1px $dark-red solid;
         transition: transform .2s;
         border-radius: 30px;
-        margin-top: 40px;
+        margin-top: 50px;
         width: 200px;
         padding: 13px;
         font-size: 2.5em;
