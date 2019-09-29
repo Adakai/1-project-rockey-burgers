@@ -67,6 +67,21 @@
                     margin-right: 45px;
                 }
             }
+
+            input:focus{
+                border-radius: 10px;
+                outline: 2px solid orange;     /* oranges! yey */
+            }
+            
+            select:focus{
+                border-radius: 10px;
+                outline: 2px solid orange;     /* oranges! yey */
+            }  
+
+            textarea:focus{
+                border-radius: 10px;
+                outline: 2px solid orange;     /* oranges! yey */
+            }
         }
 
         .careers-form-btn {

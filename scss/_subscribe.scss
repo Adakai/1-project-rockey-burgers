@@ -44,6 +44,10 @@
             width: 60%;
             padding: 10px;            
         }
+        input:focus{
+            border-radius: 10px;
+            outline: 2px solid orange;     /* oranges! yey */
+        }
     }
 
     .sub-form-btn {
