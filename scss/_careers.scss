@@ -69,18 +69,18 @@
             }
 
             input:focus{
-                border-radius: 10px;
-                outline: 2px solid orange;     /* oranges! yey */
-            }
+                outline: none;
+                box-shadow: 0 0 0 2px orange;
+              }
             
             select:focus{
-                border-radius: 10px;
-                outline: 2px solid orange;     /* oranges! yey */
+                outline: none;
+                box-shadow: 0 0 0 2px orange;   
             }  
 
             textarea:focus{
-                border-radius: 10px;
-                outline: 2px solid orange;     /* oranges! yey */
+                outline: none;
+                box-shadow: 0 0 0 2px orange;
             }
         }
 

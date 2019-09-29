@@ -445,17 +445,14 @@
         .careers-container .careers-form-container .careers-form #careers_checkboxs input {
           margin-right: 45px; }
       .careers-container .careers-form-container .careers-form input:focus {
-        border-radius: 10px;
-        outline: 2px solid orange;
-        /* oranges! yey */ }
+        outline: none;
+        box-shadow: 0 0 0 2px orange; }
       .careers-container .careers-form-container .careers-form select:focus {
-        border-radius: 10px;
-        outline: 2px solid orange;
-        /* oranges! yey */ }
+        outline: none;
+        box-shadow: 0 0 0 2px orange; }
       .careers-container .careers-form-container .careers-form textarea:focus {
-        border-radius: 10px;
-        outline: 2px solid orange;
-        /* oranges! yey */ }
+        outline: none;
+        box-shadow: 0 0 0 2px orange; }
     .careers-container .careers-form-container .careers-form-btn {
       margin-top: 50px; }
 
@@ -542,9 +539,8 @@
       width: 60%;
       padding: 10px; }
     .sub-form-container .sub-form input:focus {
-      border-radius: 10px;
-      outline: 2px solid orange;
-      /* oranges! yey */ }
+      outline: none;
+      box-shadow: 0 0 0 2px orange; }
   .sub-form-container .sub-form-btn {
     margin-top: 50px; }
 
