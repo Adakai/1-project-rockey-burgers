@@ -497,6 +497,9 @@
       width: 150px;
       padding: 5px;
       font-size: 1.5em; }
+    .faq-container .faq-container .hide-show-btn:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px #922c2d; }
 
 .sub-title {
   text-shadow: 1px 1px 1px #00000062;

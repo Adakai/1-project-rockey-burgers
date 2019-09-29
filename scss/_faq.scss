@@ -53,9 +53,13 @@
             width: 150px;
             padding: 5px;
             font-size: 1.5em;
-          }
+        }
           .hide-show-btn:hover {
             @extend .img-btn:hover;
-          }
+        }
+        .hide-show-btn:focus{
+            outline: none;
+            box-shadow: 0 0 0 2px $dark-red;
+        }
     }
 }
