@@ -2,23 +2,21 @@
 
 .maps-container {
     @include display-flex-center();
-    @include box-shadow();
-    justify-content: space-evenly;
-    flex-direction: column;
+    @include box-shadow-one();
+    @include column-space-evenly();
     height: 3750px;
     background-color: $background-color;
     
 
     .map-section {
-       @include display-flex-center();
-       flex-direction: column;
+       @include display-flex-col();
+       @include box-shadow-three();
        text-align: center;
        background-color: $light-white;
-       box-shadow: 2px 2px 4px 5px $shadow-color;
        border-radius: 10px;
 
        h2 {
-          @include text-shadow(); 
+          @include text-shadow-one(); 
           font-size: 3em;
           color: $dark-red;
           border-bottom: 2px solid $dark-red;

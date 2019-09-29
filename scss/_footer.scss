@@ -4,12 +4,12 @@
 
 .footer {
   @include display-flex-center();
+  @include box-shadow-one();
   justify-content: space-evenly;
   height: 90px;
   width: 100%;
   background-color: $dark-red;
   border-radius: 10px 10px 0 0;
-  box-shadow: 2px -1px 4px 3px $shadow-color;
 
   .footer-name {
     padding-left: 10%;

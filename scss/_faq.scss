@@ -16,18 +16,16 @@
     }
 
     .faq-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include display-flex-col();
+        @include box-shadow-three();
         margin: 20px 0 10px 0;
         border-radius: 10px;
         height: 750px;
         width: 83.5%;
         background-color: $light-white;
-        box-shadow: 2px 2px 4px 3px $shadow-color;
-
     
         h3 {
+            @include text-shadow-one();
             text-align: center;
             font-size: 2.5em;
             color: $dark-red;
@@ -51,23 +49,13 @@
         }
         
         .hide-show-btn {
-            background-color: $light-red-btn;
-            border: 1px $dark-red solid;
-            transition: transform .2s;
-            border-radius: 30px;
+            @extend .img-btn;
             width: 150px;
             padding: 5px;
             font-size: 1.5em;
-            color: $light-white;
-            align-self: center;
-            box-shadow: 2px 2px 4px 2px $shadow-color;
           }
           .hide-show-btn:hover {
-            background-color: $hover-red-btn;
-            color: $white;
-            cursor: pointer;
-            box-shadow: 3px 3px 4px 3px $shadow-color;
-            @include transform-zoom(); 
+            @extend .img-btn:hover;
           }
     }
 }

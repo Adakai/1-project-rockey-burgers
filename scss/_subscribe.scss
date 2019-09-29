@@ -1,24 +1,24 @@
 @import "_varibles.scss";
 
 .sub-title {
+    @include text-shadow-one(); 
     margin: 20px 0;
     font-size: 2em;
-    @include text-shadow(); 
     color: $dark-red;
 }
 
 .sub-form-container {
     @include display-flex-col();
-    align-items: center;
+    @include box-shadow-three();
     background-color: $light-white;
     border-radius: 10px;
-    box-shadow: 2px 2px 4px 3px $shadow-color;
     margin-bottom: 100px;
     height: 550px;
     width: 80%;
     padding: 25px;
 
     h2 {
+        @include text-shadow-one();
         font-size: 1.8em;
         color: $dark-red;
         margin-bottom: 25px;
@@ -31,41 +31,27 @@
         margin: 10px 0;
 
         label {
+            @include text-shadow-zero();
             font-size: 1.5em;
             color: $dark-red;
-            text-shadow: .5px .5px .5px $text-shadow;
         }
 
         .sub-form-input {
+            @include box-shadow-two();
             border: 1px solid $super-light-red;
             border-radius: 10px;
             font-size: 1.2em; 
             width: 60%;
-            padding: 10px;
-            box-shadow: 2px 2px 4px 2px $shadow-color;
-            
+            padding: 10px;            
         }
     }
 
     .sub-form-btn {
-        background-color: $light-red-btn;
-        border: 1px $dark-red solid;
-        transition: transform .2s;
-        border-radius: 30px;
+        @extend .img-btn;
         margin-top: 50px;
-        width: 200px;
-        padding: 13px;
-        font-size: 2.5em;
-        color: $light-white;
-        align-self: center;
-        box-shadow: 2px 2px 4px 2px $shadow-color;
     }
 
     .sub-form-btn:hover {
-        background-color: $hover-red-btn;
-        color: $white;
-        cursor: pointer;
-        box-shadow: 3px 3px 4px 3px $shadow-color;
-        @include transform-zoom(); 
+        @extend .img-btn:hover; 
     }
 }

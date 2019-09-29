@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
 /*Nav bar logo, menu and links*/
 .nav-container {
+  box-shadow: 2px 2px 4px 3px #88888850;
   display: flex;
   justify-content: space-evenly;
   background-color: #f5f2eccc;
@@ -9,7 +10,6 @@
   position: fixed;
   z-index: 1;
   border-radius: 0 0 10px 10px;
-  box-shadow: 2px 2px 4px 3px #88888850;
   /*logo in top left*/
   /*middle nav bar and faq on right and anchor tags*/
   /*active tab highlight*/ }
@@ -128,12 +128,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 2px -1px 4px 3px #88887081;
   justify-content: space-evenly;
   height: 90px;
   width: 100%;
   background-color: #922c2d;
-  border-radius: 10px 10px 0 0;
-  box-shadow: 2px -1px 4px 3px #88888850; }
+  border-radius: 10px 10px 0 0; }
   .footer .footer-name {
     padding-left: 10%;
     width: 40%;
@@ -156,77 +156,76 @@
 
 /*Setting image background and height and width of it*/
 .content-wrapper, .content-wrapper-left, .content-wrapper-right {
-  background-image: url("../img/landing-page-img.jpg");
-  height: 100%;
-  background-size: cover;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  flex-direction: column;
+  background-image: url("../img/landing-page-img.jpg");
+  background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*Font on top of the image back ground*/
-  /*Button design and display*/ }
+  height: 100%;
+  /*Font on top of the image back ground*/ }
   .content-wrapper .text-wrapper, .content-wrapper-left .text-wrapper, .content-wrapper-right .text-wrapper, .content-wrapper-left .text-wrapper-left, .content-wrapper-right .text-wrapper-left, .content-wrapper-right .text-wrapper-right {
     color: #f5f2ecc9;
     font-size: 3.5em;
     margin-top: 200px;
     margin-bottom: 60px; }
     .content-wrapper .text-wrapper h1, .content-wrapper-left .text-wrapper h1, .content-wrapper-right .text-wrapper h1, .content-wrapper-left .text-wrapper-left h1, .content-wrapper-right .text-wrapper-left h1, .content-wrapper-right .text-wrapper-right h1 {
-      text-align: center;
-      text-shadow: 1px 3px 3px #00000062; }
-  .content-wrapper .img-btn, .content-wrapper-left .img-btn, .content-wrapper-right .img-btn {
-    background-color: #922c2de8;
-    border: 1px #922c2d solid;
-    transition: transform .2s;
-    border-radius: 30px;
-    width: 200px;
-    padding: 13px;
-    font-size: 2.5em;
-    color: #f5f2ecc9;
-    align-self: center;
-    box-shadow: 2px 2px 4px 2px #88888850; }
-  .content-wrapper .img-btn:hover, .content-wrapper-left .img-btn:hover, .content-wrapper-right .img-btn:hover {
-    background-color: #922c2dfc;
-    color: #f5f2ec;
-    cursor: pointer;
-    box-shadow: 3px 3px 4px 3px #88888850;
-    -ms-transform: scale(1.04);
-    /* IE 9 */
-    -webkit-transform: scale(1.04);
-    /* Safari 3-8 */
-    transform: scale(1.04); }
+      text-shadow: 1px 3px 3px #00000062;
+      text-align: center; }
+
+/*Button design and display*/
+.img-btn, .careers-container .careers-form-container .careers-form-btn, .faq-container .faq-container .hide-show-btn, .sub-form-container .sub-form-btn {
+  box-shadow: 2px 2px 4px 3px #88888850;
+  background-color: #922c2de8;
+  border: 1px solid #922c2d;
+  transition: transform .2s;
+  border-radius: 30px;
+  width: 200px;
+  padding: 13px;
+  font-size: 2.5em;
+  color: #f5f2ecc9; }
+
+.img-btn:hover, .careers-container .careers-form-container .careers-form-btn:hover, .faq-container .faq-container .hide-show-btn:hover, .sub-form-container .sub-form-btn:hover {
+  -ms-transform: scale(1.04);
+  /* IE 9 */
+  -webkit-transform: scale(1.04);
+  /* Safari 3-8 */
+  transform: scale(1.04);
+  background-color: #922c2dfc;
+  color: #f5f2ec;
+  cursor: pointer;
+  box-shadow: 3px 3px 4px 3px #88888850; }
 
 /*Video and Text above video*/
 .vid-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  box-shadow: 2px -1px 4px 3px #88887081;
   padding-top: 50px;
   background-color: #ecd9c7;
-  border-radius: 10px 10px 0 0;
-  box-shadow: 2px -1px 4px 3px #88888850; }
+  border-radius: 10px; }
   .vid-container .video-text {
+    text-shadow: 1px 2px 2px #00000062;
     font-size: 4em;
     color: #922c2d;
-    padding-bottom: 50px;
-    text-shadow: 1px 2px 2px #00000062; }
+    padding-bottom: 50px; }
   .vid-container video {
+    box-shadow: 2px 2px 4px 5px #88888850;
     width: 80%;
     border-radius: 10px;
     margin-bottom: 100px;
-    cursor: pointer;
-    box-shadow: 2px 2px 4px 5px #88888850; }
+    cursor: pointer; }
 
 @media screen and (max-width: 900px) {
   .content-wrapper .text-wrapper, .content-wrapper-left .text-wrapper, .content-wrapper-right .text-wrapper, .content-wrapper-left .text-wrapper-left, .content-wrapper-right .text-wrapper-left, .content-wrapper-right .text-wrapper-right {
     font-size: 2.5em;
     margin: 225px 0 80px 0; }
-  .content-wrapper .img-btn, .content-wrapper-left .img-btn, .content-wrapper-right .img-btn {
+  .content-wrapper .img-btn, .content-wrapper-left .img-btn, .content-wrapper-right .img-btn, .content-wrapper .careers-container .careers-form-container .careers-form-btn, .careers-container .careers-form-container .content-wrapper .careers-form-btn, .content-wrapper-left .careers-container .careers-form-container .careers-form-btn, .careers-container .careers-form-container .content-wrapper-left .careers-form-btn, .content-wrapper-right .careers-container .careers-form-container .careers-form-btn, .careers-container .careers-form-container .content-wrapper-right .careers-form-btn, .content-wrapper .faq-container .faq-container .hide-show-btn, .faq-container .faq-container .content-wrapper .hide-show-btn, .content-wrapper-left .faq-container .faq-container .hide-show-btn, .faq-container .faq-container .content-wrapper-left .hide-show-btn, .content-wrapper-right .faq-container .faq-container .hide-show-btn, .faq-container .faq-container .content-wrapper-right .hide-show-btn, .content-wrapper .sub-form-container .sub-form-btn, .sub-form-container .content-wrapper .sub-form-btn, .content-wrapper-left .sub-form-container .sub-form-btn, .sub-form-container .content-wrapper-left .sub-form-btn, .content-wrapper-right .sub-form-container .sub-form-btn, .sub-form-container .content-wrapper-right .sub-form-btn {
     width: 175px;
     font-size: 2em; }
   .vid-container .video-text {
@@ -236,7 +235,7 @@
   .content-wrapper .text-wrapper, .content-wrapper-left .text-wrapper, .content-wrapper-right .text-wrapper, .content-wrapper-left .text-wrapper-left, .content-wrapper-right .text-wrapper-left, .content-wrapper-right .text-wrapper-right {
     font-size: 2em;
     margin: 80px 0 60px 0; }
-  .content-wrapper .img-btn, .content-wrapper-left .img-btn, .content-wrapper-right .img-btn {
+  .content-wrapper .img-btn, .content-wrapper-left .img-btn, .content-wrapper-right .img-btn, .content-wrapper .careers-container .careers-form-container .careers-form-btn, .careers-container .careers-form-container .content-wrapper .careers-form-btn, .content-wrapper-left .careers-container .careers-form-container .careers-form-btn, .careers-container .careers-form-container .content-wrapper-left .careers-form-btn, .content-wrapper-right .careers-container .careers-form-container .careers-form-btn, .careers-container .careers-form-container .content-wrapper-right .careers-form-btn, .content-wrapper .faq-container .faq-container .hide-show-btn, .faq-container .faq-container .content-wrapper .hide-show-btn, .content-wrapper-left .faq-container .faq-container .hide-show-btn, .faq-container .faq-container .content-wrapper-left .hide-show-btn, .content-wrapper-right .faq-container .faq-container .hide-show-btn, .faq-container .faq-container .content-wrapper-right .hide-show-btn, .content-wrapper .sub-form-container .sub-form-btn, .sub-form-container .content-wrapper .sub-form-btn, .content-wrapper-left .sub-form-container .sub-form-btn, .sub-form-container .content-wrapper-left .sub-form-btn, .content-wrapper-right .sub-form-container .sub-form-btn, .sub-form-container .content-wrapper-right .sub-form-btn {
     width: 150px;
     font-size: 1.5em; }
   .vid-container .video-text {
@@ -253,48 +252,45 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 2px -1px 4px 3px #88887081;
   background-color: #ecd9c7;
-  width: 100%;
-  box-shadow: 2px -1px 4px 3px #88887081; }
+  width: 100%; }
   .menu-background .menu-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border-radius: 5px;
     width: 95%;
     margin: 100px 0;
     background-color: #ecd9c7; }
     .menu-background .menu-container .menu-item {
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
+      align-items: center;
+      box-shadow: 2px 2px 4px 5px #88888850;
       background-color: #f5f2ecc9;
       border-radius: 10px;
       width: 425px;
       height: 600px;
       margin: 20px;
       text-align: center;
-      font-size: 30px;
-      box-shadow: 2px 2px 4px 3px #88888850; }
+      font-size: 30px; }
       .menu-background .menu-container .menu-item img {
+        box-shadow: 2px 2px 4px 3px #88888850;
         border-radius: 10px;
         height: 250px;
         margin-top: 30px;
         width: 350px;
-        background-color: white;
-        box-shadow: 2px 2px 4px 3px #88888850; }
+        background-color: white; }
       .menu-background .menu-container .menu-item h1 {
+        text-shadow: 0.5px 0.5px 0.5px #00000062;
         font-size: 1em;
         color: #922c2d;
         width: 300px;
-        border-bottom: 2px solid #922c2d;
-        text-shadow: 0.5px 0.5px 0.5px #00000062; }
+        border-bottom: 2px solid #922c2d; }
       .menu-background .menu-container .menu-item ul {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
         padding: 0;
         font-size: .7em;
         list-style: none; }
@@ -323,14 +319,14 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
-  box-shadow: 2px -1px 4px 3px #88887081;
+  box-shadow: 2px 2px 4px 5px #88888850;
   height: 1000px;
   width: 100%;
   background-color: #ecd9c7; }
   .about-container .about-title {
+    text-shadow: 1px 1px 1px #00000062;
     color: #922c2d;
-    font-size: 2em;
-    text-shadow: 1px 1px 1px #00000062; }
+    font-size: 2em; }
     .about-container .about-title h2 {
       margin: 60px 0; }
   .about-container .about-us {
@@ -339,13 +335,13 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
+    box-shadow: 2px 2px 4px 3px #88888850;
     padding: 20px;
-    background-color: #f2ede3;
+    background-color: #f5f2ecc9;
     margin-bottom: 100px;
     height: 80%;
     width: 80%;
     border-radius: 10px;
-    box-shadow: 2px 2px 4px 3px #88888850;
     font-size: 1.5em;
     overflow-x: auto; }
     .about-container .about-us .section {
@@ -366,18 +362,17 @@
   justify-content: center;
   align-items: center;
   box-shadow: 2px -1px 4px 3px #88887081;
-  justify-content: space-evenly;
   flex-direction: column;
+  justify-content: space-evenly;
   height: 3750px;
   background-color: #ecd9c7; }
   .maps-container .map-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 4px 5px #88888850;
     text-align: center;
     background-color: #f5f2ecc9;
-    box-shadow: 2px 2px 4px 5px #88888850;
     border-radius: 10px; }
     .maps-container .map-section h2 {
       text-shadow: 1px 1px 1px #00000062;
@@ -400,18 +395,17 @@
   width: 100%;
   background-color: #ecd9c7; }
   .careers-container .careers-title {
+    text-shadow: 1px 1px 1px #00000062;
     margin: 20px 0;
     font-size: 2em;
-    text-shadow: 1px 1px 1px #00000062;
     color: #922c2d; }
   .careers-container .careers-form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-items: center;
+    box-shadow: 2px 2px 4px 5px #88888850;
     background-color: #f5f2ecc9;
     border-radius: 10px;
-    box-shadow: 2px 2px 4px 3px #88888850;
     height: 1300px;
     width: 80%;
     padding: 70px; }
@@ -423,54 +417,35 @@
       width: 80%;
       margin: 10px 0; }
       .careers-container .careers-form-container .careers-form label {
+        text-shadow: 0.5px 0.5px 0.5px #00000062;
         font-size: 1.5em;
         margin: 10px;
-        color: #922c2d;
-        text-shadow: 0.5px 0.5px 0.5px #00000062; }
+        color: #922c2d; }
       .careers-container .careers-form-container .careers-form .careers-form-input {
-        outline: green;
+        box-shadow: 2px 2px 4px 3px #88888850;
         border: 1px solid #922c2d66;
         border-radius: 10px;
         font-size: 1.2em;
         width: 60%;
-        padding: 10px;
-        box-shadow: 2px 2px 4px 2px #88888850; }
+        padding: 10px; }
       .careers-container .careers-form-container .careers-form .careers-selection {
-        width: 62.5%;
-        height: 35px;
+        box-shadow: 2px 2px 4px 3px #88888850;
+        width: 61.7%;
+        height: 40px;
         border: 1px solid #922c2d66;
+        border-radius: 10px;
         font-size: 1.2em;
-        color: gray;
-        box-shadow: 2px 2px 4px 2px #88888850; }
+        color: gray; }
       .careers-container .careers-form-container .careers-form #careers_checkboxs {
         color: #922c2d;
         font-size: 1em; }
         .careers-container .careers-form-container .careers-form #careers_checkboxs label {
+          text-shadow: 0.5px 0.5px 0.5px #00000062;
           margin-right: 20px; }
         .careers-container .careers-form-container .careers-form #careers_checkboxs input {
           margin-right: 45px; }
     .careers-container .careers-form-container .careers-form-btn {
-      background-color: #922c2de8;
-      border: 1px #922c2d solid;
-      transition: transform .2s;
-      border-radius: 30px;
-      margin-top: 30px;
-      width: 200px;
-      padding: 13px;
-      font-size: 2.5em;
-      color: #f5f2ecc9;
-      align-self: center;
-      box-shadow: 2px 2px 4px 2px #88888850; }
-    .careers-container .careers-form-container .careers-form-btn:hover {
-      background-color: #922c2dfc;
-      color: #f5f2ec;
-      cursor: pointer;
-      box-shadow: 3px 3px 4px 3px #88888850;
-      -ms-transform: scale(1.04);
-      /* IE 9 */
-      -webkit-transform: scale(1.04);
-      /* Safari 3-8 */
-      transform: scale(1.04); }
+      margin-top: 50px; }
 
 .faq-container {
   display: flex;
@@ -486,13 +461,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 2px 2px 4px 5px #88888850;
     margin: 20px 0 10px 0;
     border-radius: 10px;
     height: 750px;
     width: 83.5%;
-    background-color: #f5f2ecc9;
-    box-shadow: 2px 2px 4px 3px #88888850; }
+    background-color: #f5f2ecc9; }
     .faq-container .faq-container h3 {
+      text-shadow: 1px 1px 1px #00000062;
       text-align: center;
       font-size: 2.5em;
       color: #922c2d; }
@@ -509,46 +485,29 @@
         font-size: 1.5em;
         color: #000000a9; }
     .faq-container .faq-container .hide-show-btn {
-      background-color: #922c2de8;
-      border: 1px #922c2d solid;
-      transition: transform .2s;
-      border-radius: 30px;
       width: 150px;
       padding: 5px;
-      font-size: 1.5em;
-      color: #f5f2ecc9;
-      align-self: center;
-      box-shadow: 2px 2px 4px 2px #88888850; }
-    .faq-container .faq-container .hide-show-btn:hover {
-      background-color: #922c2dfc;
-      color: #f5f2ec;
-      cursor: pointer;
-      box-shadow: 3px 3px 4px 3px #88888850;
-      -ms-transform: scale(1.04);
-      /* IE 9 */
-      -webkit-transform: scale(1.04);
-      /* Safari 3-8 */
-      transform: scale(1.04); }
+      font-size: 1.5em; }
 
 .sub-title {
+  text-shadow: 1px 1px 1px #00000062;
   margin: 20px 0;
   font-size: 2em;
-  text-shadow: 1px 1px 1px #00000062;
   color: #922c2d; }
 
 .sub-form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-items: center;
+  box-shadow: 2px 2px 4px 5px #88888850;
   background-color: #f5f2ecc9;
   border-radius: 10px;
-  box-shadow: 2px 2px 4px 3px #88888850;
   margin-bottom: 100px;
   height: 550px;
   width: 80%;
   padding: 25px; }
   .sub-form-container h2 {
+    text-shadow: 1px 1px 1px #00000062;
     font-size: 1.8em;
     color: #922c2d;
     margin-bottom: 25px; }
@@ -560,38 +519,18 @@
     width: 80%;
     margin: 10px 0; }
     .sub-form-container .sub-form label {
+      text-shadow: 0.5px 0.5px 0.5px #00000062;
       font-size: 1.5em;
-      color: #922c2d;
-      text-shadow: 0.5px 0.5px 0.5px #00000062; }
+      color: #922c2d; }
     .sub-form-container .sub-form .sub-form-input {
+      box-shadow: 2px 2px 4px 3px #88888850;
       border: 1px solid #922c2d66;
       border-radius: 10px;
       font-size: 1.2em;
       width: 60%;
-      padding: 10px;
-      box-shadow: 2px 2px 4px 2px #88888850; }
+      padding: 10px; }
   .sub-form-container .sub-form-btn {
-    background-color: #922c2de8;
-    border: 1px #922c2d solid;
-    transition: transform .2s;
-    border-radius: 30px;
-    margin-top: 50px;
-    width: 200px;
-    padding: 13px;
-    font-size: 2.5em;
-    color: #f5f2ecc9;
-    align-self: center;
-    box-shadow: 2px 2px 4px 2px #88888850; }
-  .sub-form-container .sub-form-btn:hover {
-    background-color: #922c2dfc;
-    color: #f5f2ec;
-    cursor: pointer;
-    box-shadow: 3px 3px 4px 3px #88888850;
-    -ms-transform: scale(1.04);
-    /* IE 9 */
-    -webkit-transform: scale(1.04);
-    /* Safari 3-8 */
-    transform: scale(1.04); }
+    margin-top: 50px; }
 
 /*setting body to defaults*/
 html, body {

@@ -12,15 +12,15 @@
 .about-container{
     @include display-flex-center();
     @include column-space-evenly();
-    @include box-shadow();
+    @include box-shadow-three();
     height: 1000px;
     width: 100%;
     background-color: $background-color;
 
     .about-title {
+        @include text-shadow-one(); 
         color: $dark-red;
         font-size: 2em;
-        @include text-shadow(); 
         
         h2 {
             margin: 60px 0;
@@ -29,13 +29,13 @@
     .about-us {
         @include display-flex-center();
         @include column-space-evenly();
+        @include box-shadow-two();
         padding: 20px;
-        background-color: #f2ede3;
+        background-color: $light-white;
         margin-bottom: 100px;
         height: 80%;
         width: 80%;
         border-radius: 10px;
-        box-shadow: 2px 2px 4px 3px $shadow-color;
         font-size: 1.5em;
         overflow-x: auto;
 

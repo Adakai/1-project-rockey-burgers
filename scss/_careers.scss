@@ -1,26 +1,23 @@
 @import "_varibles.scss";
 
 .careers-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include display-flex-col();                       
     height: 1700px;
     width: 100%;
     background-color: $background-color;
 
     .careers-title {
+        @include text-shadow-one(); 
         margin: 20px 0;
         font-size: 2em;
-        @include text-shadow(); 
         color: $dark-red;
     }
 
     .careers-form-container {
         @include display-flex-col();
-        align-items: center;
+        @include box-shadow-three();
         background-color: $light-white;
         border-radius: 10px;
-        box-shadow: 2px 2px 4px 3px $shadow-color;
         height: 1300px;
         width: 80%;
         padding: 70px;
@@ -32,30 +29,29 @@
             margin: 10px 0;
 
             label {
+                @include text-shadow-zero();
                 font-size: 1.5em;
                 margin: 10px;
                 color: $dark-red;
-                text-shadow: .5px .5px .5px $text-shadow;
             }
 
             .careers-form-input {
-                outline: green;
+                @include box-shadow-two();
                 border: 1px solid $super-light-red;
                 border-radius: 10px;
                 font-size: 1.2em; 
                 width: 60%;
                 padding: 10px;
-                box-shadow: 2px 2px 4px 2px $shadow-color;
-                
             }
 
             .careers-selection {
-                width: 62.5%;
-                height: 35px;
+                @include box-shadow-two();
+                width: 61.7%;
+                height: 40px;
                 border: 1px solid $super-light-red;
+                border-radius: 10px;
                 font-size: 1.2em;
                 color: gray;
-                box-shadow: 2px 2px 4px 2px $shadow-color;
             }
             
             #careers_checkboxs {
@@ -63,6 +59,7 @@
                 font-size: 1em;
 
                 label {
+                    @include text-shadow-zero();
                     margin-right: 20px;
                 }
 
@@ -73,25 +70,12 @@
         }
 
         .careers-form-btn {
-            background-color: $light-red-btn;
-            border: 1px $dark-red solid;
-            transition: transform .2s;
-            border-radius: 30px;
-            margin-top: 30px;
-            width: 200px;
-            padding: 13px;
-            font-size: 2.5em;
-            color: $light-white;
-            align-self: center;
-            box-shadow: 2px 2px 4px 2px $shadow-color;
+            @extend .img-btn;
+            margin-top: 50px;
         }
 
         .careers-form-btn:hover {
-            background-color: $hover-red-btn;
-            color: $white;
-            cursor: pointer;
-            box-shadow: 3px 3px 4px 3px $shadow-color;
-            @include transform-zoom(); 
+            @extend .img-btn:hover;
         }
     }
 }

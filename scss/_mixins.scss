@@ -1,3 +1,5 @@
+@import "_varibles.scss";
+
 @mixin anchor-tags() {
     width: 25%;
     height: 100%;
@@ -10,6 +12,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin row-space-evenly() {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @mixin display-flex-col() {
@@ -34,13 +41,35 @@
   cursor: pointer;
 }
 
-@mixin box-shadow() {
+@mixin box-shadow-one() {
   box-shadow: 2px -1px 4px 3px #88887081;
 }
 
-@mixin text-shadow() {
+@mixin box-shadow-two() {
+  box-shadow: 2px 2px 4px 3px $shadow-color;
+}
+
+@mixin box-shadow-three() {
+  box-shadow: 2px 2px 4px 5px $shadow-color;
+}
+
+@mixin main-text-shadow() {
+  text-shadow: 1px 3px 3px $text-shadow;
+}
+
+@mixin text-shadow-zero() {
+  text-shadow: .5px .5px .5px $text-shadow;
+}
+
+@mixin text-shadow-one() {
   text-shadow: 1px 1px 1px $text-shadow;
 }
+
+@mixin text-shadow-two() {
+  text-shadow: 1px 2px 2px $text-shadow;
+}
+
+
 
 @mixin transform-zoom() {
   -ms-transform: scale(1.04); /* IE 9 */
