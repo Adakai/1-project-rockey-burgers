@@ -200,6 +200,9 @@
   cursor: pointer;
   box-shadow: 3px 3px 4px 3px #88888850; }
 
+.img-btn:focus, .careers-container .careers-form-container .careers-form-btn:focus, .faq-container .faq-container .hide-show-btn:focus, .sub-form-container .sub-form-btn:focus {
+  outline: none; }
+
 /*Video and Text above video*/
 .vid-container {
   display: flex;
@@ -455,6 +458,8 @@
         box-shadow: 0 0 0 2px orange; }
     .careers-container .careers-form-container .careers-form-btn {
       margin-top: 50px; }
+    .careers-container .careers-form-container .careers-form-btn:focus {
+      outline: none; }
 
 .faq-container {
   display: flex;
@@ -546,6 +551,8 @@
       box-shadow: 0 0 0 2px orange; }
   .sub-form-container .sub-form-btn {
     margin-top: 50px; }
+  .sub-form-container .sub-form-btn:focus {
+    outline: none; }
 
 /*setting body to defaults*/
 html, body {
