@@ -219,7 +219,8 @@
     width: 80%;
     border-radius: 10px;
     margin-bottom: 100px;
-    cursor: pointer; }
+    cursor: pointer;
+    outline: none; }
 
 @media screen and (max-width: 900px) {
   .content-wrapper .text-wrapper, .content-wrapper-left .text-wrapper, .content-wrapper-right .text-wrapper, .content-wrapper-left .text-wrapper-left, .content-wrapper-right .text-wrapper-left, .content-wrapper-right .text-wrapper-right {
