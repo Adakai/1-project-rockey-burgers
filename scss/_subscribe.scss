@@ -58,4 +58,8 @@
     .sub-form-btn:hover {
         @extend .img-btn:hover; 
     }
+
+    .sub-form-btn:focus {
+        outline: none;
+    }
 }

@@ -50,6 +50,10 @@
   box-shadow: 3px 3px 4px 3px $shadow-color;
 }
 
+.img-btn:focus {
+  outline: none;
+}
+
 /*Video and Text above video*/
 
 .vid-container {

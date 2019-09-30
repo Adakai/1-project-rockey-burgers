@@ -92,5 +92,9 @@
         .careers-form-btn:hover {
             @extend .img-btn:hover;
         }
+
+        .careers-form-btn:focus {
+            outline: none;
+        }
     }
 }
